@@ -8,14 +8,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
-  /* กำหนดตำแหน่งรูปภาพ */
-  #top-left-image {
-    position: fixed; /* ติดหน้าจอเวลาเลื่อน */
-    top: 20px;       /* ระยะห่างจากบน */
-    left: 20px;      /* ระยะห่างจากซ้าย */
-    width: 150px;     /* กำหนดขนาด */
-    height: auto;    /* ให้สูงตามสัดส่วน */
-    z-index: 1000;   /* ให้เหนือ element อื่น */ 
+ .fixed-image {
+    position: fixed;   /* อยู่กับที่แม้เลื่อนหน้า */
+    top: 50px;         /* ระยะจากด้านบน */
+    left: 50px;        /* ระยะจากด้านซ้าย */
+    width: 200px;      /* ขนาดคงที่ */
+    height: auto;      /* รักษาสัดส่วน */
   }
 </style>
 <body class="bg-gradient-to-b from-white to-red-50 text-gray-700">
@@ -79,3 +77,4 @@
   </div>
 </body>
 </html>
+
