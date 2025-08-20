@@ -10,6 +10,26 @@
 
 <body class="bg-gradient-to-b from-white to-red-50 text-gray-700">
   <!-- Hero Section -->
+  <style>
+.logo {
+    position: fixed; /* ตำแหน่งคงที่บนหน้าจอ */
+    top: 20px;       /* ระยะจากบน */
+    left: 20px;      /* ระยะจากซ้าย */
+    width: 120px;    /* ขนาดคงที่สำหรับคอม */
+    height: auto;    /* รักษาสัดส่วน */
+    z-index: 1000;   /* ให้โลโก้ทับองค์ประกอบอื่น */
+  }
+
+  /* ปรับขนาดสำหรับมือถือ */
+  @media screen and (max-width: 768px) {
+    .logo {
+      width: 80px;   /* ขนาดเล็กลงสำหรับมือถือ */
+      top: 10px;     /* ปรับระยะบน */
+      left: 10px;    /* ปรับระยะซ้าย */
+    }
+  }
+</style>
+<img src="test.png" alt="Logo" class="logo">
   <section class="text-center py-16 bg-red-50">
     <h1 class="text-4xl font-bold text-red-700">Thai Fast TDAC Service</h1>
     <p class="mt-4 text-lg">Thailand Digital Arrival Card Service</p>
@@ -66,6 +86,7 @@
   </div>
 </body>
 </html>
+
 
 
 
