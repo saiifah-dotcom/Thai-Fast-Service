@@ -8,12 +8,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
- .fixed-image {
-    position: fixed;   /* อยู่กับที่แม้เลื่อนหน้า */
-    top: 50px;         /* ระยะจากด้านบน */
-    left: 50px;        /* ระยะจากด้านซ้าย */
-    width: 200px;      /* ขนาดคงที่ */
-    height: auto;      /* รักษาสัดส่วน */
+   /* กำหนดตำแหน่งรูปภาพ */
+  #top-left-image {
+    position: fixed; /* ติดหน้าจอเวลาเลื่อน */
+    top: 20px;       /* ระยะห่างจากบน */
+    left: 20px;      /* ระยะห่างจากซ้าย */
+    width: 150px;     /* กำหนดขนาด */
+    height: auto;    /* ให้สูงตามสัดส่วน */
+    z-index: 1000;   /* ให้เหนือ element อื่น */ 
   }
 </style>
 <body class="bg-gradient-to-b from-white to-red-50 text-gray-700">
@@ -36,6 +38,12 @@
   </section>
 
   <!-- Solution -->
+  <section class="max-w-4xl mx-auto px-6 py-12 bg-white shadow-md rounded-xl">
+    <h2 class="text-2xl font-bold text-green-700">สิ่งที่เราทำได้</h2>
+    <p class="text-sm text-gray-600">Our Service / 我们的服务</p>
+    <p class="mt-4">เราจะทำการกรอกเอกสารของคุณล่วงหน้า พร้อมส่งให้คุณทางออนไลน์ก่อนเดินทาง</p>
+    <p class="mt-2 text-sm">We fill in your document in advance and send it online before you travel. / 我们会提前为您填写并在出发前将文件发送给您。</p>
+  </section>
   <section class="max-w-4xl mx-auto px-6 py-12 bg-white shadow-md rounded-xl">
     <h2 class="text-2xl font-bold text-green-700">สิ่งที่เราทำได้</h2>
     <p class="text-sm text-gray-600">Our Service / 我们的服务</p>
@@ -71,10 +79,9 @@
     <a href="https://wa.me/66812345678" target="_blank" class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
       <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="w-8 h-8 invert" />
     </a>
-    <a href="weixin://dl/chat?your-wechat-id" target="_blank" class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/wechat.svg" alt="WeChat" class="w-8 h-8 invert" />
     </a>
   </div>
 </body>
 </html>
+
 
